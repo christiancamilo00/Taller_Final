@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 2</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">10. El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente
+                las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta. </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                  
+                                                package Taller2.Banco;
+                                                
+                                                import java.util.Scanner;
+                                                
+                                                /**
+                                                    *
+                                                    * @author Christian
+                                                    */
+                                                public class Banco {
+                                                        public static void main(String[] args) {
+                                                            String titular;
+                                                    int cantidad,ingreso,retiro, opcion;
+                                                    
+                                                
+                                                        Scanner sc = new Scanner(System.in);
+                                                        System.out.println("Nombre del titular");
+                                                        titular = sc.nextLine();
+                                                        System.out.println("Escribir cantidad");
+                                                        cantidad = sc.nextInt();
+                                                        System.out.println("Su banco fiel, por favor elija una opcion");
+                                                        System.out.println("1. Realizar ingresos");
+                                                        System.out.println("2. Realizar retiros");
+                                                        System.out.println("3. Realizar consultas de valor");
+                                                        System.out.println("4. Salir ");
+                                                        opcion = sc.nextInt();
+                                                        
+                                                        switch (opcion) {
+                                                            case 1:
+                                                                    System.out.println("Valor del ingreso?");
+                                                                    ingreso = sc.nextInt();
+                                                                    if(ingreso < 0){
+                                                                        System.out.println("El valor introducido es negativo");
+                                                                    }
+                                                                    break;
+                                                                case 2:
+                                                                    System.out.println("Valor del retiro?");
+                                                                    retiro = sc.nextInt();
+                                                                    if(retiro > cantidad){
+                                                                        System.out.println("El valor introducido es mayor al que tiene en la cuenta");
+                                                                    }
+                                                                    break;
+                                                                case 3:
+                                                                    System.out.println("Su saldo es " + cantidad);
+                                                                    break;     
+                                                                case 4:    
+                                                                    System.out.println("Hasta Luego");
+                                                                    break;     
+                                                        }
+                                                        
+                                                        
+                                                        }
+                                                }
+               
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT2Ejercicio9.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="ListarEjerciciosJavaTaller3.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

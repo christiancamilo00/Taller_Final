@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>InformacionPrincipal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De PseInt Taller 3</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">6. Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación
+                permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                        Proceso Prototipo
+                                                            Definir opcion Como entero;
+                                                            Definir contacto1 Como entero;
+                                                            Definir contacto2 Como entero;
+                                                            Definir contacto3 Como entero;
+                                                            Definir buscar Como entero;
+                                                            Definir eliminar Como entero;
+                                                            Definir control Como entero;
+                                                            
+                                                            Repetir
+                                                                
+                                                                Escribir "Menu ";
+                                                                Escribir "1.Añadir contactos";
+                                                                Escribir "2.Buscar contactos";
+                                                                Escribir "3.Eliminar contactos";
+                                                                Escribir "4.Salir del sistema";
+                                                                Leer opcion;
+                                                                
+                                                                Segun opcion Hacer
+                                                                    1:
+                                                                        Escribir "Ingrese contacto";
+                                                                        Leer  contacto1;
+                                                                        Escribir "Ingrese contacto 2";
+                                                                        Leer  contacto2;
+                                                                        si contacto2 = contacto1 Entonces
+                                                                            Escribir "Ese contacto ya existe";
+                                                                        FinSi
+                                                                        Escribir "Ingrese contacto 3";
+                                                                        Leer  contacto3;
+                                                                        si contacto3 = contacto2 o contacto3 = contacto1 Entonces
+                                                                            Escribir "Ese contacto ya existe";
+                                                                        FinSi
+                                                                    2:
+                                                                        Escribir "Ingrese contacto a buscar: ";
+                                                                        Leer buscar;
+                                                                        si buscar = contacto3 o buscar = contacto2 o buscar = contacto1 Entonces
+                                                                            Escribir "El contacto ",buscar," si existe";
+                                                                        sino
+                                                                            Escribir "El contacto no existe";
+                                                                        FinSi
+                                                                        
+                                                                    3:
+                                                                        Escribir "Ingrese contacto a eliminar: ";
+                                                                        Leer eliminar;
+                                                                        si eliminar = contacto1 Entonces
+                                                                            contacto1 <- 0;
+                                                                            Escribir "El contacto ",eliminar," ah sido eliminado";
+                                                                            sino
+                                                                            si eliminar = contacto2 Entonces
+                                                                                contacto2 <- 0;
+                                                                                Escribir "El contacto ",eliminar," ah sido eliminado";
+                                                                                sino
+                                                                                si eliminar = contacto3  Entonces
+                                                                                    contacto3 <- 0;
+                                                                                    Escribir "El contacto ",eliminar," ah sido eliminado";
+                                                                                SiNo escribir "El contacto ",eliminar," no existe";
+                                                                                FinSi
+                                                                            FinSi
+                                                                        FinSi
+                                                                    
+                                                                    De Otro Modo:
+                                                                        Escribir "Hasta Luego";
+                                                                FinSegun
+                                                                contacto1 <- contacto1;
+                                                                contacto2 <- contacto2;
+                                                                contacto3 <- contacto3;
+                                                            Hasta Que opcion = 4
+                                                            
+                                                        FinProceso
+            
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="PseintT3Ejercicio5.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="PseintT3Ejercicio7.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 2</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">9. El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La
+                aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado. </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                        
+                                                    package Taller2.Area;
+                                                    
+                                                    import java.util.Scanner;
+                                                    
+                                                    /**
+                                                        *
+                                                        * @author Christian
+                                                        */
+                                                    public class Area {
+                                                            public static void main(String[] args) {
+                                                                int largor;
+                                                        int anchor;
+                                                        int rec;
+                                                        int baset;
+                                                        int alturat;
+                                                        float tria;
+                                                        int opcion;
+                                                        int baseme;
+                                                        int basema;
+                                                        int alturatr;
+                                                        float trap;
+                                                    
+                                                            Scanner sc = new Scanner(System.in);
+                                                            System.out.println("Calculo del area de figuras geometricas, por favor elija una opcion");
+                                                            System.out.println("1. Rectangulo");
+                                                            System.out.println("2. Triangulo");
+                                                            System.out.println("3. Trapecio");
+                                                            System.out.println("4. Salir");
+                                                            opcion = sc.nextInt();
+                                                            
+                                                            switch (opcion) {
+                                                                case 1:
+                                                                        System.out.println("Largo del rectangulo?");
+                                                                        largor = sc.nextInt();
+                                                                        System.out.println("Ancho del rectangulo?");
+                                                                        anchor = sc.nextInt();
+                                                                        rec = largor*anchor;
+                                                                        System.out.println("El area del rectangulo es " + rec);
+                                                                        
+                                                                        break;
+                                                                    case 2:
+                                                                        System.out.println("Base del triangulo?");
+                                                                        baset = sc.nextInt();
+                                                                        System.out.println( "Altura del triangulo ?");
+                                                                        alturat = sc.nextInt();
+                                                                        tria = (baset*alturat)/2;
+                                                                        System.out.println( "El area del triangulo es " + tria);
+                                                                        break;
+                                                                    case 3:
+                                                                        System.out.println("Base menor del trapesio?");
+                                                                        baseme = sc.nextInt();
+                                                                        System.out.println("Base mayor del trapesio ?");
+                                                                        basema = sc.nextInt();
+                                                                        System.out.println("Altura del trapesio ?");
+                                                                        alturatr = sc.nextInt();
+                                                                        trap = ((basema+baseme)/2*alturatr);
+                                                                        System.out.println("El area del trapesio es " + trap);
+                                                                        break;     
+                                                                    case 4:    
+                                                                        break;     
+                                                            }
+                                                            
+                                                            
+                                                            }
+                                                        
+                                                    }
+                   
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT2Ejercicio8.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT2Ejercicio10.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

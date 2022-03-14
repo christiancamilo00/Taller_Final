@@ -1,0 +1,85 @@
+.fruta:nth-child(odd) {
+    background-color: green;
+}
+
+.fruta:nth-child(even) {
+    background-color: red;
+}
+
+.fruit:nth-child(odd) {
+    background-color: blue;
+}
+
+.odd:nth-child(odd) {
+    background-color: rgba(10, 100, 100, 0.63);
+}
+
+.fruit:nth-child(even) {
+    background-color: rgba(132, 90, 168, 0.596);
+}
+
+.even:nth-child(even) {
+    background-color: rgba(132, 90, 168, 0.596);
+}
+
+).fruta {
+    background-color: #b400ba;
+}
+
+.even {
+    background-color: gray
+}
+
+.body {
+    background-color: #4CAF50;
+    font-size: 20px;
+}
+
+
+/* Green */
+
+
+/* Blue */
+
+.seccion {
+    background-color: black;
+}
+
+
+/* Red */
+
+
+/* Gray */
+
+
+/* Black */
+
+.cambiar {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.seccion {
+    background-color: #4CAF50;
+    /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}

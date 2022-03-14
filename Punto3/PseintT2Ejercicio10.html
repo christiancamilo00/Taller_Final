@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>InformacionPrincipal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De PseInt Taller 2</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">10. El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente
+                las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta. </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                            Proceso Banco
+                                                                Definir titular Como caracter;
+                                                                Definir cantidad Como entero;
+                                                                Definir ingreso Como entero;
+                                                                Definir retiro Como entero;
+                                                                Definir opcion Como entero;
+                                                                
+                                                                Escribir "Nombre del titular";
+                                                                Leer titular;
+                                                                Escribir "Escribir cantidad";
+                                                                Leer cantidad;
+                                                                Escribir "Su banco fiel, por favor elija una opcion";
+                                                                Escribir "1. Realizar ingresos";
+                                                                Escribir "2. Realizar retiros";
+                                                                Escribir "3. Realizar consultas de valor";
+                                                                Escribir "4. Salir";
+                                                                Leer opcion;
+                                                                
+                                                                Segun opcion Hacer
+                                                                    1:
+                                                                        Escribir "Valor del ingreso?";
+                                                                        Leer  ingreso;
+                                                                        si ingreso < 0 Entonces
+                                                                            Escribir "El valor introducido es negativo";
+                                                                        FinSi
+                                                                        
+                                                                    2:
+                                                                        Escribir "Valor del retiro?";
+                                                                        Leer  retiro;
+                                                                        si retiro > cantidad Entonces
+                                                                            Escribir "El valor introducido es mayor al que tiene en la cuenta";
+                                                                        FinSi
+                                                                        
+                                                                    3:
+                                                                        Escribir "Su saldo es ", cantidad;
+                                                                    De Otro Modo:
+                                                                        Escribir "Hasta Luego";
+                                                                FinSegun
+                                                                
+                                                            FinProceso	
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="PseintT2Ejercicio9.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="ListarEjerciciosPseIntTaller3.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

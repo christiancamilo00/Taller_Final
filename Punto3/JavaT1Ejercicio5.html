@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 1</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">5. Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de
+                Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a). </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                           
+                                        package Taller1.Mascota;
+                                        
+                                        import java.util.Scanner;
+                                        
+                                        /**
+                                            *
+                                            * @author Christian
+                                            */
+                                        public class Mascota {
+                                                public static void main(String args[]) {
+                                                String nmascota,tipo,nombre; 
+                                                int edad;
+                                                
+                                                Scanner sc = new Scanner(System.in);
+                                        
+                                                System.out.println("Por favor escribir el nombre de su mascota ");
+                                                nmascota = sc.nextLine();
+                                                System.out.println("Por favor escribir el tipo de mascota");
+                                                tipo = sc.nextLine();
+                                                System.out.println("Por favor escribir su nombre");
+                                                nombre = sc.nextLine();
+                                                System.out.println("Por favor escribir la edad de la mascota");
+                                                edad = sc.nextInt();
+                                                        
+                                                System.out.println(nmascota + " es un@ " + tipo + " el cual tiene "+ edad + " años de edad "+ " y " + nombre +" es actualmente su dueñ@" );    
+                                        
+                                                }
+                                        }
+                   
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT1Ejercicio4.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="ListarEjerciciosJavaTaller2.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

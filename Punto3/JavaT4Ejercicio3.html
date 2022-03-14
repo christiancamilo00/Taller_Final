@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java </title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 4</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">3. Imprimir los números primos del 1 al 1000, el resultado debe ser buscado de forma matemática </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                            
+                                                        package Taller4.Primos;
+                                                        
+                                                        import java.util.Scanner;
+                                                        
+                                                        /**
+                                                            *
+                                                            * @author Christian
+                                                            */
+                                                        public class Primos {
+                                                                public static void main(String[] args) {
+                                                                int indice ,num,dato,n,i;
+                                                                
+                                                                
+                                                                for(n =1; n <=100; n ++){
+                                                                    num=0;
+                                                                    for(i=1;i<=n;){
+                                                                        if(n%i==0){
+                                                                            num=num+1;
+                                                                        }
+                                                                        
+                                                                    }
+                                                                    if(num==2){
+                                                                        System.out.println( n + " Es primo");
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        System.out.println( n + "No es primo");
+                                                                    }
+                                                                    
+                                                                }
+                                                                
+                                                                
+                                                            }
+                                                            
+                                                        }
+               
+	    	</pre>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT4Ejercicio2.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT4Ejercicio4.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

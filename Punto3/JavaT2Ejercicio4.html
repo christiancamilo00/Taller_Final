@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 2</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">4. La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe
+                permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película. </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                          
+                                                        package Taller2.VideoTienda;
+                                                        
+                                                        import java.util.Scanner;
+                                                        
+                                                        /**
+                                                            *
+                                                            * @author Christian
+                                                            */
+                                                        public class VideoTienda {
+                                                            
+                                                            public static void main(String[] args) {
+                                                                    String nompelicula, pelicula1= "Titanic",pelicula2="Spiderman",pelicula3= "Rio",recpelicula;
+                                                                    int opcion;
+                                                        
+                                                                Scanner sc = new Scanner(System.in);
+                                                                System.out.println("Tienda Porvenir por favor elija una opcion");
+                                                                System.out.println("1. Alquilar pelicula");
+                                                                System.out.println("2. Consultar peliculas disponibles");
+                                                                System.out.println("3. Recibir pelicula");
+                                                                opcion = sc.nextInt();
+                                                                
+                                                                switch (opcion) {
+                                                                    case 1:
+                                                                            System.out.println("Como te llama la pelicula?");
+                                                                            nompelicula = sc.nextLine();
+                                                                            break;
+                                                                        case 2:
+                                                                            System.out.println("Las peliculas disponibles son:");
+                                                                            System.out.println(pelicula1);
+                                                                            System.out.println(pelicula2);
+                                                                            System.out.println(pelicula3);
+                                                                            break;
+                                                                        case 3:
+                                                                            System.out.println("Por favor ingrese  las novedades de la pelicula");
+                                                                            recpelicula = sc.nextLine();
+                                                                            break;     
+                                                                    
+                                                                }
+                                                                
+                                                                
+                                                                }
+                                                            
+                                                        }
+               
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT2Ejercicio3.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT2Ejercicio5.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de contactenos</title>
+
+  <link rel="stylesheet"  href="css/estilo.css">
+	<script type="text/javascript">
+	function obtenerdatos(){
+		var nombre = document.getElementById("nombre").value;
+		var email = document.getElementById("email").value;
+		var asunto = document.getElementById("asunto").value;
+		var mensaje = document.getElementById("mensaje").value;
+		
+	
+		console.log(nombre);	
+		console.log(email);		
+		console.log(asunto);	
+		console.log(mensaje);	
+		}
+		function refrescar()
+		{
+    	document.getElementById("registro").reset();
+		}
+		
+	</script>
+
+  
+  </head>
+
+
+<body>
+  <script>
+		console.log("nombre",nombre);	
+		console.log("email",email);		
+		console.log("asunto",asunto);	
+		console.log("mensaje",mensaje);
+	</script>
+   
+
+<div class="contact_form">
+
+<div class="formulario" >
+      <h1>Formulario de contactenos</h1>
+<h3>Por favor dejenos sus inquietudes y nos comunicaremos contigo.</h3>
+
+
+<form  name="registro">
+
+
+<p>
+<label for="nombre"  class="nombre">Nombre
+<span class="obligatorio">*</span>
+</label>
+<input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+</p>
+
+<p>
+<label for="email" class="email">Email
+<span class="obligatorio">*</span>
+</label>
+<input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+
+</p>
+
+
+<p>
+<label for="asunto" name="asunto" class="asunto">Asunto
+<span class="obligatorio">*</span>
+</label>
+<input type="text" name="asunto" id="asunto"  class="asunto" required="obligatorio" placeholder="Escribe un asunto">
+</p>
+
+<p>
+<label for="mensaje" name ="mensaje" class="mensaje">Mensaje
+<span class="obligatorio">*</span>
+</label>                     
+<textarea name="mensaje" class="mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+</p>  
+  <input type="button" onClick="obtenerdatos()" value="Enviar">
+	<input type="reset" value="Limpiar formulario">
+
+<p class="aviso">
+<span class="obligatorio"> * </span>los campos son obligatorios.
+</p>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>

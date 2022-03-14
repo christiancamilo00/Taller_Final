@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java </title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 4</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">
+                <pre>1. Crear un vector de tipo Entero con 5 posiciones, llenarlo con información solicitada al usuari
+                    Después de recoger toda la información, se requiere imprimir el índice de cada
+                    posición en
+                    arreglo con su valor de la siguiente manera:
+                    [0] = 55
+                    [1] = 99
+                    [2] = 11
+                    [3] = 56
+                    [4] = 69
+                 </pre></td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                           
+                                        package Taller4.Vector;
+                                        
+                                        import java.util.Scanner;
+                                        
+                                        /**
+                                            *
+                                            * @author Christian
+                                            */
+                                        public class Vector {
+                                            public static void main(String[] args) {
+                                                int indice ;
+                                                int[] usuario;
+                                                usuario = new int[5];
+                                                
+                                                Scanner sc = new Scanner(System.in);
+                                        
+                                                System.out.println("Ingrese primera posicion");
+                                                usuario[0] = sc.nextInt();
+                                                    System.out.println("Ingrese segunda posicion");
+                                                usuario[1] = sc.nextInt();
+                                                    System.out.println("Ingrese tercera posicion");
+                                                usuario[2] = sc.nextInt();
+                                                    System.out.println("Ingrese cuarta posicion");
+                                                usuario[3] = sc.nextInt();
+                                                    System.out.println("Ingrese quinta posicion");
+                                                usuario[4] = sc.nextInt();
+                                                
+                                                for(indice =0; indice <=4; indice ++){
+                                                    System.out.println("[" +indice+"] = " + usuario[indice]);
+                                                }
+                                                
+                                                
+                                            }
+                                        }
+               
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="ListarEjerciciosJavaTaller4.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT4Ejercicio2.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>InformacionPrincipal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De PseInt Taller 3</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">8. La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de
+                conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el ¡Chatea con Sofka University!
+                sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                Proceso Escuela
+                                                    Definir opcion Como entero;
+                                                    Definir nombres,aprobo,ncliente,telefono,buscar,retirar Como caracter;
+                                                    Definir nombres1,aprobo1,ncliente1,telefono1 Como caracter;
+                                                    Definir nombres2,aprobo2,ncliente2,telefono2 Como caracter;
+                                                    Definir nombres3,aprobo3,ncliente3,telefono3 Como caracter;
+                                                    Definir nombres4,aprobo4 Como caracter;
+                                                    Definir nombres5,aprobo5 Como caracter;
+                                                    Definir nombres6,aprobo6 Como caracter;
+                                                    Definir nombres7,aprobo7 Como caracter;
+                                                    
+                                                    Repetir
+                                                        
+                                                        Escribir "Menu Escuela Automovilistica";
+                                                        Escribir "1.Registrar ingreso curso";
+                                                        Escribir "2.Consultar usuario";
+                                                        Escribir "3.Resultados de la prueba";
+                                                        Escribir "4.Salir del sistema";
+                                                        Leer opcion;
+                                                        
+                                                        Segun opcion Hacer
+                                                            1:
+                                                                Escribir "Ingrese nombres y apellidos";
+                                                                Leer  nombres;
+                                                                Escribir "Ingrese SI aprobo o NO el curso";
+                                                                Leer  aprobo;
+                                                                
+                                                                Escribir "Ingrese nombres y apellidos";
+                                                                Leer  nombres1;
+                                                                Escribir "Ingrese SI aprobo o NO el curso";
+                                                                Leer  aprobo1;
+                                                                
+                                                                Escribir "Ingrese nombres y apellidos";
+                                                                Leer  nombres2;
+                                                                Escribir "Ingrese SI aprobo o NO el curso";
+                                                                Leer  aprobo2;
+                                                                
+                                                                Escribir "Ingrese nombres y apellidos";
+                                                                Leer  nombres3;
+                                                                Escribir "Ingrese SI aprobo o NO el curso";
+                                                                Leer  aprobo3;
+                                                                
+                                                                Escribir "Ingrese nombres y apellidos";
+                                                                Leer  nombres4;
+                                                                Escribir "Ingrese SI aprobo o NO el curso";
+                                                                Leer  aprobo4;
+                                                                
+                                                                Escribir "Ingrese nombres y apellidos";
+                                                                Leer  nombres5;
+                                                                Escribir "Ingrese SI aprobo o NO el curso";
+                                                                Leer  aprobo5;
+                                                                
+                                                                Escribir "Ingrese nombres y apellidos";
+                                                                Leer  nombres6;
+                                                                Escribir "Ingrese SI aprobo o NO el curso";
+                                                                Leer  aprobo6;
+                                                                
+                                                                Escribir "Ingrese nombres y apellidos";
+                                                                Leer  nombres7;
+                                                                Escribir "Ingrese SI aprobo o NO el curso";
+                                                                Leer  aprobo7;
+                                                                
+                                                            2:
+                                                                Escribir "Ingrese el nombre del usuario a buscar: ";
+                                                                Leer buscar;
+                                                                si buscar = nombres Entonces
+                                                                    Escribir "El usuario  ",nombres," ", aprobo," aprobo la prueba";
+                                                                sino
+                                                                    si buscar = nombres1 Entonces
+                                                                        Escribir "El usuario  ",nombres1," ", aprobo1," aprobo la prueba";
+                                                                    sino
+                                                                        si buscar = nombres2 Entonces
+                                                                            Escribir "El usuario  ",nombres2," ", aprobo2," aprobo la prueba";
+                                                                        sino
+                                                                            si buscar = nombres3 Entonces
+                                                                                Escribir "El usuario  ",nombres3," ", aprobo3," aprobo la prueba";
+                                                                            sino
+                                                                                si buscar = nombres4 Entonces
+                                                                                    Escribir "El usuario  ",nombres4," ", aprobo4," aprobo la prueba";
+                                                                                sino
+                                                                                    si buscar = nombres5 Entonces
+                                                                                        Escribir "El usuario  ",nombres5," ", aprobo5," aprobo la prueba";	
+                                                                                    sino
+                                                                                        si buscar = nombres6 Entonces
+                                                                                            Escribir "El usuario  ",nombres6," ", aprobo6," aprobo la prueba";	
+                                                                                        sino
+                                                                                            si buscar = nombres7 Entonces
+                                                                                                Escribir "El usuario  ",nombres7," ", aprobo7," aprobo la prueba";	
+                                                                                    sino
+                                                                                    escribir "El usuario ",buscar," no existe";									
+                                                                                            FinSi
+                                                                                        finsi
+                                                                                    FinSi
+                                                                                FinSi	
+                                                                            FinSi
+                                                                        FinSi
+                                                                    FinSi
+                                                                FinSi
+                                                            
+                                                                
+                                                            3:
+                                                                Escribir "Los usuario con sus respectivos resultados de las pruebas son: ";
+                                                                
+                                                                
+                                                                Escribir nombres, " ", aprobo, " aprobo la prueba";
+                                                                Escribir nombres1,  " ", aprobo1, " aprobo la prueba";
+                                                                Escribir nombres2,  " ", aprobo2, " aprobo la prueba";
+                                                                Escribir nombres3,  " ", aprobo3, " aprobo la prueba";
+                                                                Escribir nombres4,  " ", aprobo4, " aprobo la prueba";
+                                                                Escribir nombres5,  " ", aprobo5, " aprobo la prueba";
+                                                                Escribir nombres6,  " ", aprobo6, " aprobo la prueba";
+                                                                Escribir nombres7,  " ", aprobo7, " aprobo la prueba";
+                                                                
+                                                        nombres <- nombres;
+                                                        aprobo <- aprobo;
+                                                        
+                                                        nombres1 <- nombres1;
+                                                        aprobo1 <- aprobo1;
+                                                        
+                                                        nombres2 <- nombres2;
+                                                        aprobo2 <- aprobo2;
+                                                        
+                                                        nombres3 <- nombres3;
+                                                        aprobo3 <- aprobo3;
+                                                        
+                                                        nombres4 <- nombres4;
+                                                        aprobo4 <- aprobo4;
+                                                        
+                                                        nombres5 <- nombres5;
+                                                        aprobo5 <- aprobo5;
+                                                        
+                                                        nombres6 <- nombres6;
+                                                        aprobo6 <- aprobo6;
+                                                        
+                                                        nombres7 <- nombres7;
+                                                        aprobo7 <- aprobo7;
+                                                        De Otro Modo:
+                                                            Escribir "Hasta Luego";
+                                                    FinSegun
+                                                        
+                                                    Hasta Que opcion = 4
+                                                    
+                                                FinProceso
+            
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="PseintT3Ejercicio7.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="ListarEjerciciosPseIntTaller4.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 2</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">7. La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados,
+                debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso). </td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                  
+                                                package Taller2.SecSalud;
+                                                
+                                                import java.util.Scanner;
+                                                
+                                                /**
+                                                    *
+                                                    * @author Christian
+                                                    */
+                                                public class SecSalud {
+                                                        public static void main(String[] args) {
+                                                        String nombre, apellido;
+                                                    float peso,estatura,imc;
+                                                    
+                                                
+                                                
+                                                        Scanner sc = new Scanner(System.in);
+                                                        System.out.println("Por favor ingrese su nomnbre");
+                                                        nombre = sc.nextLine();
+                                                        System.out.println("Por favor ingrese su apellido");
+                                                        apellido = sc.nextLine();
+                                                        System.out.println("Por favor ingrese su peso en kilos");
+                                                        peso = sc.nextFloat();
+                                                        System.out.println("Por favor ingrese su estatura en metros");
+                                                        estatura = sc.nextFloat();
+                                                        
+                                                        imc = peso /(estatura*estatura);
+                                                            System.out.println(imc);
+                                                        if(imc <= 18.5){
+                                                        System.out.println("Usted se encuentra en bajo peso");
+                                                        }
+                                                        else if(imc >= 18.5 & imc <= 24.9) {
+                                                            System.out.println("Usted se encuentra en el peso normal");
+                                                            }
+                                                            else if(imc >= 25 & imc <= 29.9) {
+                                                            System.out.println("Usted se encuentra en sobrepeso");
+                                                            }
+                                                            else if(imc >= 30) {
+                                                            System.out.println("Usted se encuentra en obesidad");
+                                                            }
+                                                    }
+                                                    }
+               
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT2Ejercicio6.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT2Ejercicio8.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

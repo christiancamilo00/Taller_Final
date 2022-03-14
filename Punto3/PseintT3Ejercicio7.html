@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>InformacionPrincipal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De PseInt Taller 3</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">7. El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga
+                los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si
+                un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                            Proceso Parqueadero
+                                                            Definir opcion Como entero;
+                                                            Definir placa,marca,ncliente,telefono,buscar,retirar Como caracter;
+                                                            Definir placa1,marca1,ncliente1,telefono1 Como caracter;
+                                                            Definir placa2,marca2,ncliente2,telefono2 Como caracter;
+                                                            Definir placa3,marca3,ncliente3,telefono3 Como caracter;
+                                                            Definir placa4,marca4,ncliente4,telefono4 Como caracter;
+                                                            
+                                                            Repetir
+                                                                
+                                                                Escribir "Menu parqueadero";
+                                                                Escribir "1.Ingresar al parqueadero";
+                                                                Escribir "2.Retirar del parqueadero";
+                                                                Escribir "3.Consultar vehiculo";
+                                                                Escribir "4.Salir del sistema";
+                                                                Leer opcion;
+                                                                
+                                                                Segun opcion Hacer
+                                                                    1:
+                                                                        Escribir "Ingrese placa";
+                                                                        Leer  placa;
+                                                                        Escribir "Ingrese marca";
+                                                                        Leer  marca;
+                                                                        Escribir "Ingrese nombre del cliente";
+                                                                        Leer  ncliente;
+                                                                        Escribir "Ingrese numero telefonico";
+                                                                        Leer  telefono;
+                                                                        
+                                                                        Escribir "Ingrese placa";
+                                                                        Leer  placa1;
+                                                                        Escribir "Ingrese marca";
+                                                                        Leer  marca1;
+                                                                        Escribir "Ingrese nombre del cliente";
+                                                                        Leer  ncliente1;
+                                                                        Escribir "Ingrese numero telefonico";
+                                                                        Leer  telefono1;
+                                                                        
+                                                                        Escribir "Ingrese placa";
+                                                                        Leer  placa2;
+                                                                        Escribir "Ingrese marca";
+                                                                        Leer  marca2;
+                                                                        Escribir "Ingrese nombre del cliente";
+                                                                        Leer  ncliente2;
+                                                                        Escribir "Ingrese numero telefonico";
+                                                                        Leer  telefono2;
+                                                                        
+                                                                        Escribir "Ingrese placa";
+                                                                        Leer  placa3;
+                                                                        Escribir "Ingrese marca";
+                                                                        Leer  marca3;
+                                                                        Escribir "Ingrese nombre del cliente";
+                                                                        Leer  ncliente3;
+                                                                        Escribir "Ingrese numero telefonico";
+                                                                        Leer  telefono3;
+                                                                        
+                                                                        Escribir "Ingrese placa";
+                                                                        Leer  placa4;
+                                                                        Escribir "Ingrese marca";
+                                                                        Leer  marca4;
+                                                                        Escribir "Ingrese nombre del cliente";
+                                                                        Leer  ncliente4;
+                                                                        Escribir "Ingrese numero telefonico";
+                                                                        Leer  telefono4;
+                                                                        
+                                                                    2:
+                                                                        Escribir "Ingrese la placa del vehiculo a retirar: ";
+                                                                        Leer retirar;
+                                                                        si retirar = placa Entonces
+                                                                            placa <- '';
+                                                                            marca <- '';
+                                                                            ncliente <- '';
+                                                                            telefono <- '';
+                                                                            Escribir "El vehiculo con placa ",retirar," ah sido retirado";
+                                                                        sino
+                                                                            si retirar = placa1 Entonces
+                                                                                placa1 <- '';
+                                                                                marca1 <- '';
+                                                                                ncliente1 <- '';
+                                                                                telefono1 <- '';
+                                                                                Escribir "El vehiculo con placa ",retirar," ah sido retirado";
+                                                                            sino
+                                                                                si retirar = placa2  Entonces
+                                                                                    placa2 <- '';
+                                                                                    marca2 <- '';
+                                                                                    ncliente2 <- '';
+                                                                                    telefono2 <- '';
+                                                                                    Escribir "El vehiculo con placa ",retirar," ah sido retirado";
+                                                                                sino
+                                                                                    si retirar = placa3  Entonces
+                                                                                        placa3 <- '';
+                                                                                        marca3 <- '';
+                                                                                        ncliente3 <- '';
+                                                                                        telefono3 <- '';
+                                                                                        Escribir "El vehiculo con placa ",retirar," ah sido retirado";
+                                                                                    sino
+                                                                                        si retirar = placa4  Entonces
+                                                                                            placa4 <- '';
+                                                                                            marca4 <- '';
+                                                                                            ncliente4 <- '';
+                                                                                            telefono4 <- '';
+                                                                                            Escribir "El vehiculo con placa ",retirar," ah sido retirado";
+                                                                                        SiNo 
+                                                                                            escribir "El vehiculo ",retirar," no existe";									
+                                                                                        FinSi	
+                                                                                    FinSi
+                                                                                FinSi
+                                                                            FinSi
+                                                                        FinSi
+                                                                        
+                                                                    3:
+                                                                        Escribir "Ingrese la placa del vehiculo a buscar: ";
+                                                                        Leer buscar;
+                                                                        si buscar = placa O  buscar = placa1 O buscar = placa2 O buscar = placa3 O buscar = placa4 Entonces
+                                                                            Escribir "El vehiculo ",buscar," si existe";
+                                                                        sino
+                                                                            Escribir "El vehiculo no existe";
+                                                                        FinSi
+                                                                        
+                                                                    De Otro Modo:
+                                                                        Escribir "Hasta Luego";
+                                                                FinSegun
+                                                                
+                                                                placa <- placa;
+                                                                marca <- marca;
+                                                                ncliente <- ncliente;
+                                                                telefono <- telefono;
+                                                                
+                                                                placa1 <- placa1;
+                                                                marca1 <- marca1;
+                                                                ncliente1 <- ncliente1;
+                                                                telefono1 <- telefono1;
+                                                                
+                                                                placa2 <- placa2;
+                                                                marca2 <- marca2;
+                                                                ncliente2 <- ncliente2;
+                                                                telefono2 <- telefono2;
+                                                                
+                                                                placa3 <- placa3;
+                                                                marca3 <- marca3;
+                                                                ncliente3 <- ncliente3;
+                                                                telefono3 <- telefono3;
+                                                                
+                                                                placa4 <- placa4;
+                                                                marca4 <- marca4;
+                                                                ncliente4 <- ncliente4;
+                                                                telefono4 <- telefono4;
+                                                            Hasta Que opcion = 4
+                                                            
+                                                        FinProceso
+            
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="PseintT3Ejercicio6.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="PseintT3Ejercicio8.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

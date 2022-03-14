@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java </title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 2</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">5. La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas características que deben indicársele al cliente
+                para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten.</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                        
+                                    package Taller2.Drogueria;
+                                    
+                                    import java.util.Scanner;
+                                    
+                                    /**
+                                        *
+                                        * @author Christian
+                                        */
+                                    public class Drogueria {
+                                            public static void main(String[] args) {
+                                            String producto ;
+                                        String tproducto ;
+                                        int cproducto ;
+                                        int pproducto ;
+                                        int opcion;
+                                        String producto1 = "Compuatores" ;
+                                        String producto2 = "Televisores";
+                                        String producto3 = "Tabletas";
+                                        int pproducto1 = 4500000;
+                                        int pproducto2 = 2000000;
+                                        int pproducto3 = 800000;
+                                        String devolucion ;
+                                        String mdevolucion ;
+                                    
+                                    
+                                            Scanner sc = new Scanner(System.in);
+                                            System.out.println("Drogueria Mi Salud por favor elija una opcion");
+                                            System.out.println("1. Compra Producto");
+                                            System.out.println("2. Consultar de precios producto");
+                                            System.out.println("3. Devolucion producto");
+                                            System.out.println("4. Salir");
+                                            opcion = sc.nextInt();
+                                            
+                                            switch (opcion) {
+                                                case 1:
+                                                        System.out.println("Nombre del producto?");
+                                                        producto = sc.nextLine();
+                                                        System.out.println("Tipo de producto?");
+                                                        tproducto = sc.nextLine();
+                                                        System.out.println("Cantidad de producto?");
+                                                        cproducto = sc.nextInt();
+                                                        System.out.println("Precio del producto?");
+                                                        pproducto = sc.nextInt();
+                                                        break;
+                                                    case 2:
+                                                        System.out.println("Las productos disponibles con sus precios son");
+                                                        System.out.println(producto1 + " Precio " + pproducto1);
+                                                        System.out.println(producto2 + " Precio " + pproducto2);
+                                                        System.out.println(producto3 + " Precio " + pproducto3);
+                                                        break;
+                                                    case 3:
+                                                        System.out.println("Por favor ingrese  el producto a devolver");
+                                                        devolucion = sc.nextLine();
+                                                        System.out.println("Por favor ingrese  el motivo de la devolucio");
+                                                        mdevolucion = sc.nextLine();
+                                                        break;     
+                                                    case 4:
+                                                        break;      
+                                            }
+                                            
+                                            
+                                            }
+                                        
+                                    }
+                   
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT2Ejercicio4.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT2Ejercicio6.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

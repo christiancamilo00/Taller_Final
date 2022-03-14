@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio De Java</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 2</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">8. El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad
+                (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                                                
+                                                            package Taller2.Pastelero;
+                                                            
+                                                            import java.util.Scanner;
+                                                            
+                                                            /**
+                                                                *
+                                                                * @author Christian
+                                                                */
+                                                            public class Pastelero {
+                                                                    public static void main(String[] args) {
+                                                                        String sabor;
+                                                                int porciones;
+                                                                String decoracion;
+                                                                String pproducto;
+                                                                int opcion;
+                                                                String torta1 = "Torta de 1 libra";
+                                                                String torta2 = "Torta de 2 libras";
+                                                                String torta3 = "Torta de 3 libras"; ;
+                                                                int ptorta1 = 50000;
+                                                                int ptorta2 = 100000;
+                                                                int ptorta3 = 150000;
+                                                                String venta;
+                                                                int precio;
+                                                                
+                                                                    Scanner sc = new Scanner(System.in);
+                                                                    System.out.println("Pastelero Don Carlos, por favor elija una opcion");
+                                                                    System.out.println("1. Registrar pedidos");
+                                                                    System.out.println("2. Disponibilidad de tortas");
+                                                                    System.out.println("3. Registro de ventas diarias");
+                                                                    System.out.println("4. Salir");
+                                                                    opcion = sc.nextInt();
+                                                                    
+                                                                    switch (opcion) {
+                                                                        case 1:
+                                                                                System.out.println("Sabor de la torta?");
+                                                                                sabor = sc.nextLine();
+                                                                                System.out.println("Cantidad de porciones de torta?");
+                                                                                porciones = sc.nextInt();
+                                                                                System.out.println("Observaciones del cliente?");
+                                                                                decoracion = sc.nextLine();
+                                                                                break;
+                                                                            case 2:
+                                                                                System.out.println("Las tortas disponibles con sus precios son: ");
+                                                                                System.out.println( torta1 + " Precio " + ptorta1);
+                                                                                System.out.println( torta2 + " Precio " + ptorta2);
+                                                                                System.out.println( torta3 + " Precio " + ptorta3);
+                                                                                break;
+                                                                            case 3:
+                                                                                System.out.println("Por favor ingrese la torta vendida");
+                                                                                venta = sc.nextLine();
+                                                                                System.out.println("Por favor ingrese el valor de la torta");
+                                                                                precio = sc.nextInt();
+                                                                                break;     
+                                                                            case 4:    
+                                                                                break;     
+                                                                    }
+                                                                    
+                                                                    
+                                                                    }
+                                                            }
+               
+						</pre>>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT2Ejercicio7.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT2Ejercicio9.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

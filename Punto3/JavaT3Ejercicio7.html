@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>InformacionPrincipal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 3</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">7. El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga
+                los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si
+                un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                           
+                                        package Taller3.Parqueadero;
+                                        
+                                        import java.util.Scanner;
+                                        
+                                        /**
+                                            *
+                                            * @author Christian
+                                            */
+                                        public class Parqueadero {
+                                                public static void main(String[] args) {
+                                                int opcion, placa=0,placa1=0,placa2=0,placa3=0,placa4=0,retirar=0,buscar=0;
+                                            String marca,ncliente,telefono;
+                                            String marca1,ncliente1,telefono1;
+                                            String marca2,ncliente2,telefono2;
+                                            String marca3,ncliente3,telefono3;
+                                            String marca4,ncliente4,telefono4;
+                                            
+                                                do{
+                                        
+                                                Scanner sc = new Scanner(System.in);
+                                                System.out.println("Menu parqueadero");
+                                                System.out.println("1.Ingresar al parqueadero");
+                                                System.out.println("2.Retirar del parqueadero");
+                                                System.out.println("3.Consultar vehiculo");
+                                                System.out.println("4. Salir del sistema");
+                                                opcion = sc.nextInt();
+                                                
+                                                switch (opcion) {
+                                                    case 1:
+                                                            System.out.println("Ingrese placa");
+                                                            placa = sc.nextInt();
+                                                            System.out.println("Ingrese marca");
+                                                            marca = sc.nextLine();
+                                                            System.out.println("Ingrese nombre del cliente");
+                                                            ncliente = sc.nextLine();
+                                                            System.out.println("Ingrese numero telefonico");
+                                                            telefono = sc.nextLine();
+                                                            
+                                                            System.out.println("Ingrese placa");
+                                                            placa1 = sc.nextInt();
+                                                            System.out.println("Ingrese marca");
+                                                            marca1 = sc.nextLine();
+                                                            System.out.println("Ingrese nombre del cliente");
+                                                            ncliente1 = sc.nextLine();
+                                                            System.out.println("Ingrese numero telefonico");
+                                                            telefono1 = sc.nextLine();
+                                                            
+                                                            System.out.println("Ingrese placa");
+                                                            placa2 = sc.nextInt();
+                                                            System.out.println("Ingrese marca");
+                                                            marca2 = sc.nextLine();
+                                                            System.out.println("Ingrese nombre del cliente");
+                                                            ncliente2 = sc.nextLine();
+                                                            System.out.println("Ingrese numero telefonico");
+                                                            telefono2 = sc.nextLine();
+                                                            
+                                                            System.out.println("Ingrese placa");
+                                                            placa3 = sc.nextInt();
+                                                            System.out.println("Ingrese marca");
+                                                            marca3 = sc.nextLine();
+                                                            System.out.println("Ingrese nombre del cliente");
+                                                            ncliente3 = sc.nextLine();
+                                                            System.out.println("Ingrese numero telefonico");
+                                                            telefono3 = sc.nextLine();
+                                                            
+                                                            System.out.println("Ingrese placa");
+                                                            placa4 = sc.nextInt();
+                                                            System.out.println("Ingrese marca");
+                                                            marca4 = sc.nextLine();
+                                                            System.out.println("Ingrese nombre del cliente");
+                                                            ncliente4 = sc.nextLine();
+                                                            System.out.println("Ingrese numero telefonico");
+                                                            telefono4 = sc.nextLine();
+                                                            break;
+                                                        case 2:
+                                                            System.out.println("Ingrese la placa del vehiculo a retirar: ");
+                                                            retirar = sc.nextInt();
+                                                            if(retirar == placa){
+                                                                placa=0;
+                                                                marca ="";
+                                                                ncliente ="";
+                                                                telefono ="";
+                                                                System.out.println("El vehiculo con placa " + retirar +" ah sido retirado");
+                                                            }
+                                                            else  if(retirar == placa1){
+                                                                placa1=0;
+                                                                marca1 ="";
+                                                                ncliente1 ="";
+                                                                telefono1 ="";
+                                                                System.out.println("El vehiculo con placa " + retirar +" ah sido retirado");
+                                                            }
+                                                            else  if(retirar == placa2){
+                                                                placa2=0;
+                                                                marca2 ="";
+                                                                ncliente2 ="";
+                                                                telefono2 ="";
+                                                                System.out.println("El vehiculo con placa " + retirar +" ah sido retirado");
+                                                            }
+                                                            else  if(retirar == placa3){
+                                                                placa3=0;
+                                                                marca3 ="";
+                                                                ncliente3 ="";
+                                                                telefono3 ="";
+                                                                System.out.println("El vehiculo con placa " + retirar +" ah sido retirado");
+                                                            }
+                                                            else  if(retirar == placa4){
+                                                                placa4=0;
+                                                                marca4 ="";
+                                                                ncliente4 ="";
+                                                                telefono4 ="";
+                                                                System.out.println("El vehiculo con placa " + retirar +" ah sido retirado");
+                                                            }
+                                                            else {
+                                                            System.out.println("El vehiculo " + retirar + " no existe"); 
+                                                            }
+                                                            break;
+                                                        case 3:
+                                                            System.out.println("Ingrese la placa del vehiculo a buscar: ");
+                                                            buscar = sc.nextInt();
+                                                            if( buscar == placa || buscar == placa1 || buscar == placa2 || buscar == placa3 || buscar == placa4){
+                                                                System.out.println( "El vehiculo " + buscar +" si existe");
+                                                            }
+                                                            else{
+                                                                System.out.println( "El vehiculo no existe");
+                                                            }
+                                                            
+                                                            
+                                                            break;     
+                                                        case 4:
+                                                            break;      
+                                                }
+                                                
+                                                }while (opcion == 4);  
+                                                }
+                                        }
+                                        
+            
+						</pre>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT3Ejercicio6.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT3Ejercicio8.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>InformacionPrincipal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/cantera1.js"></script>
+</head>
+
+<body id="estilo2" class="estilo2">
+    <br>
+    <table width="900" border="1" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="center">Ejercicio De Java Taller 3</td>
+        </tr>
+        <tr>
+            <td align="center">Enunciado</td>
+        </tr>
+    </table>
+
+    <br>
+
+
+    <br>
+
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <td align="left">6. Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación
+                permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.</td>
+        </tr>
+    </table>
+
+
+    <br>
+    <table width="900" height="40" border="0" align="center" id="estilo1" class="estilo1">
+        <tr>
+            <pre>
+                                       
+                                    package Taller3.Prototipo;
+                                    
+                                    import java.util.Scanner;
+                                    
+                                    /**
+                                        *
+                                        * @author Christian
+                                        */
+                                    public class Prototipo {
+                                            public static void main(String[] args) {
+                                            int opcion,contacto1=0,contacto2=0,contacto3=0,buscar,eliminar,control ;
+                                        
+                                            do{
+                                    
+                                            Scanner sc = new Scanner(System.in);
+                                            System.out.println("Menu");
+                                            System.out.println("1.Añadir contactos");
+                                            System.out.println("2.Buscar contactos");
+                                            System.out.println("3.Eliminar contactos");
+                                            System.out.println("4. Salir");
+                                            opcion = sc.nextInt();
+                                            
+                                            switch (opcion) {
+                                                case 1:
+                                                        System.out.println("Ingrese contacto");
+                                                        contacto1 = sc.nextInt();
+                                                        System.out.println("Ingrese contacto 2");
+                                                        contacto2 = sc.nextInt();
+                                                        if(contacto2 == contacto1){
+                                                            System.out.println("Ese contacto ya existe");
+                                                        }
+                                                        System.out.println("Ingrese contacto 3");
+                                                        contacto3 = sc.nextInt();
+                                                        if(contacto3 == contacto2 || contacto3 == contacto1){
+                                                            System.out.println("Ese contacto ya existe");
+                                                        }
+                                                        break;
+                                                    case 2:
+                                                        System.out.println("Ingrese contacto a buscar: ");
+                                                        buscar = sc.nextInt();
+                                                        if(buscar == contacto3 || buscar == contacto2 || buscar== contacto1){
+                                                            System.out.println("El contacto " + buscar + " si existe");
+                                                        }
+                                                        else{
+                                                            System.out.println("El contacto no  existe");
+                                                        }
+                                                        break;
+                                                    case 3:
+                                                        System.out.println("Ingrese contacto a eliminar: ");
+                                                        eliminar = sc.nextInt();
+                                                        if( eliminar == contacto1){
+                                                            contacto1 =0;
+                                                            System.out.println("El contacto " +eliminar +" ah sido eliminado");
+                                                        }
+                                                        
+                                                        else if(eliminar == contacto2) {
+                                                        contacto2 =0;  
+                                                        System.out.println("El contacto " +eliminar +" ah sido eliminado");
+                                                        }
+                                                        else if(eliminar == contacto3) {
+                                                        contacto3 =0;  
+                                                        System.out.println("El contacto " +eliminar +" ah sido eliminado");
+                                                        }
+                                                        else{
+                                                            System.out.println("El contacto " +eliminar +" no existe");
+                                                        }
+                                                        
+                                                        break;     
+                                                    case 4:
+                                                        break;      
+                                            }
+                                            
+                                            }while (opcion == 4);  
+                                            }
+                                    }
+               
+            
+						</pre>
+        </tr>
+    </table>
+
+
+    <br>
+    <br>
+    <table width="900" height="40" align="center">
+        <tr>
+            <td><button id="estilo3" class="estilo3" autofocus><a href="JavaT3Ejercicio5.html" > REGRESAR</button></td>
+            </a>
+            <td><button button id="estilo3" class="estilo3" autofocus><a href="index.html"> MENU PPAL</button></td>
+            </a>
+
+            <td align="right"><button id="estilo5" class="estilo5" autofocus><a href="JavaT3Ejercicio7.html" > SIGUIENTE</button></td>
+            </a>
+
+        </tr>
+    </table>
+
+</body>
+
+</html>
